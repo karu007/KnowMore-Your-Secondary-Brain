@@ -1,0 +1,474 @@
+#loader
+{
+    display: none;
+}
+#canvas1 
+{
+    background-color: rgba(35,35,35,0.8);
+    margin: auto;
+    width: 70%;
+    height: 24vw;
+    position: absolute;
+    left: 15%;
+    top: 0vw;
+    z-index: 1;
+}
+
+#guard1
+{
+    background-color: rgba(35,35,35,0.8);
+    position: absolute;
+    left: 0%;
+    top: 0vw;
+    width: 15%;
+    height: 24vw;
+}
+
+#guard2
+{
+    background-color: rgba(35,35,35,0.8);
+    position: absolute;
+    left: 85%;
+    top: 0vw;
+    width: 15%;
+    height: 24vw;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: absolute;
+    top:42vw;
+    left:48vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 0.3vw solid #000000;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 2vw;
+      left: 2vw;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0vw;
+      left: 0vw;
+      width: 4vw;
+      height: 4vw;
+      opacity: 0;
+    }
+  }
+
+#header-container
+{
+    width: 100%;
+    height:7vw;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+
+#logo-container
+{
+    position: absolute;
+    top:0vw;
+    left:0vw;
+    height:7vw;
+    width:23vw;
+}
+#main-logo
+{
+    position: absolute;
+    top:0vw;
+    left:2vw;
+    height:7vw;
+    width:19vw;
+}
+
+#container1
+{
+    position: absolute;
+    top:0vw;
+    left:23vw;
+    height:7vw;
+    width: 70vw;
+    background-color: #2C313B;
+}
+
+#container2
+{
+    position: absolute;
+    top:0vw;
+    left:93vw;
+    height:7vw;
+    width: 7vw;
+    background-color: #2C313B;
+}
+
+#menu-icon
+{
+    position: absolute;
+    top: 2vw;
+    left:2vw;
+    height: 3vw;
+    width: 3vw;
+    transition-duration:1s;
+    display: none;
+}
+
+#body-container
+{
+    position: absolute;
+    top: 7vw;
+    left: 0vw;
+    width:100%; 
+    height:24vw;
+}
+
+#text-logo-container
+{
+    position: absolute;
+    top: 2vw;
+    left: 38vw;
+    height: 14vw;
+    width: 24vw;
+    z-index: 5;
+}
+
+#text-logo
+{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    height: 14vw;
+    width: 24vw;
+    z-index: 5;
+}
+
+#login-signup-container, #search-bar-container
+{
+    position: absolute;
+    top: 16vw;
+    left: 38vw;
+    height: 3vw;
+    width: 24vw;
+    z-index: 5;
+}
+
+#search-bar-container
+{
+    position: absolute;
+    top: 16vw;
+    left: 30vw;
+    height: 3vw;
+    width: 40vw;
+    box-shadow: 0.6vw 0.6vw 1.2vw;
+    border-radius: 0.9vw 0.9vw 0.9vw 0.9vw;
+}
+
+#search-box
+{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    height: 3vw;
+    width: 35.5vw;
+    background-color: #232323; /* #2C313B; */
+    border: none;
+    padding-left: 1.5vw;
+    padding-bottom: 0vw;
+    padding-top: 0vw;
+    padding-right: 0vw;
+
+    font-family: "Helvetica Neue";
+    font-size: 2vw;
+    font-weight: 300;
+    color: white;
+    outline: none;
+
+    border-top-left-radius: 0.9vw;
+    border-bottom-left-radius: 0.9vw;
+}
+
+#search-icon
+{
+    position: absolute;
+    top: 0vw;
+    left: 37vw;
+    height: 3vw;
+    width: 3vw;
+    background-color: #232323;
+    border-top-right-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+}
+
+#search-icon:hover
+{
+    background-color:rgb(213,213,213)
+}
+
+#login-btn
+{
+    position: absolute;
+    top: 0vw;
+    left: 5vw;
+    height: 3vw;
+    width: 6vw;
+    font-family: "Helvetica Neue";
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: center;
+    background-color: #D5D5D5;
+    box-shadow: 0.6vw 0.6vw 1.2vw;
+    border-radius: 1vw;
+    outline: none;
+}
+
+#login-btn:hover
+{
+    background-color: #B4B4B4;
+    font-weight: 450;
+}
+
+#login-btn:active
+{
+    box-shadow: 0.1vw 0.1vw 0.1vw;
+    top: 0.2vw;
+}
+
+#signup-btn
+{
+    position: absolute;
+    top: 0vw;
+    left: 13vw;
+    height: 3vw;
+    width: 6vw;
+    font-family: "Helvetica Neue";
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: center;
+    background-color: #D5D5D5;
+    box-shadow: 0.6vw 0.6vw 1.2vw;
+    border-radius: 1vw;
+    outline: none;
+}
+
+#signup-btn:active
+{
+    box-shadow: 0.1vw 0.1vw 0.1vw;
+    top: 0.2vw;
+}
+
+#signup-btn:hover
+{
+    background-color: #B4B4B4;
+    font-weight: 450;
+}
+
+#bottom-container
+{
+    position: relative;
+    top: 33vw;
+    left: 5vw;
+    width: 90vw;
+    height: max-content;
+}
+
+.search-result
+{
+    height: max-content;
+    width: 100%;
+}
+
+.link
+{
+    font-family: "Arial";
+    font-size: 1.1vw;
+    color: black;
+}
+
+.text
+{
+    font-family: "Helvetica Neue";
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: black;
+}
+
+#tagline-container1
+{
+    position: absolute;
+    top: 2vw;
+    width: 32vw;
+    left: 29vw;
+    height: 5vw;
+}
+
+#tagline-phrase-container1
+{
+    position: absolute;
+    top: 0vw;
+    left: 1vw;
+    width: 12vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+
+    font-family: "Helvetica Neue";
+    font-size: 2.2vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+#brain-icon
+{
+    position: absolute;
+    top: 0vw;
+    left: 13vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+#tagline-phrase-container2
+{
+    position: absolute;
+    top: 0vw;
+    left: 19vw;
+    width: 13vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+
+    font-family: "Helvetica Neue";
+    font-size: 2.2vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+#tagline-container2
+{
+    position: absolute;
+    top: 7vw;
+    width: 32vw;
+    left: 29vw;
+    height: 5vw;
+}
+
+#tagline-phrase-container3
+{
+    position: absolute;
+    top: 0vw;
+    left: 1vw;
+    width: 30vw;
+    height: 5vw;
+    display: block;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+#side-pane-container
+{
+    position: absolute;
+    top: 7vw;
+    right: 0vw;
+    height: 100%;
+    width: 0vw;
+    background-color: rgba(32,36,43, 0.8);
+    transition-duration: 1s;
+    z-index: 10;
+    display: none;
+}
+
+#add-container-box
+{
+    position: absolute;
+    left: 3vw;
+    width: 17vw;
+    height: 4vw;
+    display: none;
+    transition-duration: 1s;
+}
+
+#add-container-text-box
+{
+    position: absolute;
+    top:1vw;
+    left: 0vw;
+    width: 14.5vw;
+    height: 2vw;
+    padding: 0vw 0vw 0vw 0.5vw;
+    border: none;
+    opacity: 0.8;
+    font-family: "Helvetica Neue";
+    font-size: 1.2vw;
+    font-weight: 400;
+    outline: none;
+}
+
+#cancel-add-container
+{
+    position: absolute;
+    top: 1vw;
+    left: 15vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    cursor: hand;
+}
+
+.option-container
+{
+    position: absolute;
+    left: 0vw;
+    width: 22vw;
+    height: 4vw;
+    user-select: none;
+}
+
+.option-container:hover
+{
+    background-color: rgba(213,213,213,0.25);
+}
+.option-container:focus
+{
+    background-color: rgba(213,213,213,0.25);
+}
+
+.highlightSelection
+{
+    background-color: rgba(213,213,213,0.25);
+}
+
+.option-icon
+{
+    position: absolute;
+    top: 0.75vw;
+    left: 2vw;
+    height: 2.5vw;
+    width: 2.5vw;
+    opacity: 0.8;
+}
+
+.option-label
+{
+    position: absolute;
+    top: 1.2vw;
+    left: 5.5vw;
+    font-family: "Helvetica Neue";
+    font-size: 1.6vw;
+    font-weight: 300;
+    color: white;
+}

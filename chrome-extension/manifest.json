@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+  
+    "name": "KnowMore",
+    "description": "This extension will help you bookmark anything on the web and store it at one place.",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+
+    "permissions": [
+     "activeTab", "storage", "unlimitedStorage"
+     ],
+
+     "background": {
+      "scripts": ["bg.js"]
+    },
+
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["track.js", "jquery.js"]
+        }
+      ]
+
+}
